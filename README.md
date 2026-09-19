@@ -118,4 +118,7 @@ bash tests/benchmark-tts.sh 2 benchmark
 
 ## 许可证
 
-本仓库脚本和文档采用 MIT License，见 `LICENSE`。本项目基于并适配原始 AstraTTS 项目：[Blackwood416/AstraTTS](https://github.com/Blackwood416/AstraTTS)。原始项目及其作者保留相应版权；本仓库新增的 Android/Termux 集成代码、脚本和文档由本仓库贡献者维护。AstraTTS、ONNX Runtime、模型、词典、音色和参考音频分别受其各自许可证约束；已获许可的 `chenxing` 发布资源见 `models/chenxing/MODEL_LICENSE.md`。
+本仓库脚本和文档采用 MIT License，见 `LICENSE`。本项目基于并适配原始 AstraTTS 项目：[Blackwood416/AstraTTS](https://github.com/Blackwood416/AstraTTS)。原始项目及其作者保留相应版权；本仓库新增的 Android/Termux 集成代码、脚本和文档由本仓库贡献者维护。AstraTTS、ONNX Runtime、模型、词典、音色和参考音频分别受其各自许可证约束
+
+
+新手做的垃圾，不保证可用
