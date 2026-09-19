@@ -1,0 +1,83 @@
+ResourcesDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources
+SharedDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared
+DictionariesDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/dictionaries
+V1ExtraDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/v1_extra
+ModelsV1BaseDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/models_v1
+ModelsV2BaseDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/models_v2
+ModelsV1Dir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/models_v1/cyrene
+ModelsV2Dir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/models_v2/cyrene
+HubertPath: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/v1_extra/hubert/chinese-hubert-base_full.onnx
+SpeakerEncoderPath: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/v1_extra/speaker_encoder.onnx
+V1TtsDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/models_v1/cyrene
+BertModelPath: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/v1_extra/bert/roberta.onnx
+TokenizerJsonPath: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/v1_extra/bert/tokenizer/tokenizer.json
+G2PDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p
+G2PDictsDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts
+G2PModelsDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/models
+CmuDict: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/english/cmudict.dict
+PinyinDict: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/chinese/mandarin_pinyin.dict
+ChineseG2PDict: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/chinese/opencpop-strict.txt
+PolyphonicJson: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/chinese/polyphonic.json
+NeuralG2PModel: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/models/checkpoint20.npz
+EnglishSpecialDict: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/english/en_special_words.txt
+EnglishPosTaggerDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/models/english/taggers/averaged_perceptron_tagger_eng
+EnglishWordSegmentDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/models/english/wordsegment
+JapaneseDictDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/japanese/open_jtalk_dic_utf_8-1.11
+JiebaDictDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/g2p/dicts/chinese/jieba
+DefaultAvatarId: cyrene
+AvatarsDir: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/avatars
+Avatars:
+- Id: chenxing
+  Name: 晨星
+  Description: 尘白禁区中晨星的音色
+  UseEngineV2: 
+  DefaultReferenceId: default
+  References:
+  - Id: default
+    Name: 【正常】良宵方始，不必心急。
+    AudioPath: 【正常】良宵方始，不必心急。.wav
+    Text: 良宵方始，不必心急。
+    Language: zh
+- Id: cyrene
+  Name: Cyrene V3.7
+  Description: Converted GPT-SoVITS CyreneV3.7
+  UseEngineV2: false
+  DefaultReferenceId: default
+  References:
+  - Id: default
+    Name: 默认参考
+    AudioPath: 嗯？一块黑色的布。.wav
+    Text: 嗯？一块黑色的布。
+    Language: zh
+UseEngineV2: false
+UseDirectML: false
+UseCoreML: false
+CoreMLFlags: 2
+IntraOpNumThreads: 4
+InterOpNumThreads: 1
+GraphOptimizationLevel: 99
+PoolCapacity: 1
+ReuseMemory: true
+Speed: 1
+NoiseScale: 0.35
+TopK: 15
+Temperature: 1
+StreamingChunkSize: 16
+StreamingPreBufferChunks: 4
+StreamingMode: true
+WasapiExclusiveMode: false
+LockFreeBufferSize: 2097152
+DebugMode: false
+Inference:
+  MaxRetries: 2
+  MinTokenMultiplierChinese: 2
+  MinTokenMultiplierJapanese: 1.7
+  MinTokenMultiplierEnglish: 1.3
+  MinTokenMultiplierOther: 0.5
+G2P:
+  CustomDictPath: custom_dict.txt
+  PriorityMode: 0
+  Languages:
+  - zh
+  - en
+CustomDictFullPath: ${ASTRA_TTS_HOME:-$HOME/tts-arm64}/./resources/shared/custom_dict.txt

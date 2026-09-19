@@ -1,0 +1,42 @@
+# Models and private media
+*.onnx
+*.pth
+*.ckpt
+*.wav
+*.mp3
+*.pcm
+resources/
+models/
+avatars/
+
+# Build/runtime artifacts
+bin/
+obj/
+*.dll
+*.so
+*.pdb
+__pycache__/
+*.py[cod]
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.yaml
+appsettings.json
+appsettings.Development.json
+
+# Logs, caches and generated jobs
+*.log
+cache/
+jobs/
+result/
+inbox-logs/
+*.uploading
+.processing
+.done
+.error
+
+# Local benchmark outputs
+benchmark-*.wav
+run-*.wav
