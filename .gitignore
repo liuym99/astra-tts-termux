@@ -1,12 +1,18 @@
 # Models and private media
 *.onnx
+!models/chenxing/*.onnx
 *.pth
 *.ckpt
 *.wav
+!models/chenxing/references/*.wav
 *.mp3
 *.pcm
 resources/
-models/
+models/*
+!models/
+!models/README.md
+!models/chenxing/
+!models/chenxing/**
 avatars/
 
 # Build/runtime artifacts
@@ -39,4 +45,6 @@ inbox-logs/
 
 # Local benchmark outputs
 benchmark-*.wav
+!models/chenxing/references/*.wav
 run-*.wav
+!models/chenxing/references/*.wav
