@@ -1,3 +1,5 @@
+新手做的垃圾，不保证可用
+
 # AstraTTS Android/Termux Integration
 
 这是一个面向 Android/Termux 的 AstraTTS 部署、API 代理、音色模型转换和投递式管理工具集。
